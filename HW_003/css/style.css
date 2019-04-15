@@ -1,1 +1,12 @@
 /**/
+
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: n;
+}
+.wrapper {
+    width: 1260px;
+    height: 300px;
+}
