@@ -57,11 +57,12 @@ body {
     color: #f26522;
 }
 .top-left:hover .white-logo {
-    display: none;
+    /*display: none;*/
+    content: url("../img/logo-orange.png");
 }
-.top-left:hover .orange-logo {
+/*.top-left:hover .orange-logo {
     display: block;
-}
+}*/
 
 .top-right {
     float: right;
