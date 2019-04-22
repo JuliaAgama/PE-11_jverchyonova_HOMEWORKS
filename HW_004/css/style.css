@@ -1,0 +1,313 @@
+/********** BASIC **********/
+
+@import url("https://use.typekit.net/hte0isi.css");
+
+body {
+    background-image: url(../img/background_rana-sawalha.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Courier, Arial, Helvetica, sans-serif;
+}
+
+/********** HEADER **********/
+
+.header {
+    height: 2vh;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    padding: 20px 100px;
+}
+.header-logo {
+    float: left;
+}
+.header-logo-name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.header-logo:hover {
+    color: #3cb878;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-icons-box {
+    float: left;
+    vertical-align: center;
+    margin-right: 50px;
+}
+.header-icons-box a {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    overflow: hidden;
+    background: url(../img/icons-header-sprite.png) no-repeat;
+    margin: 0 10px;
+}
+
+.header-icons-box a:hover {
+    filter: contrast(50%) sepia(1) hue-rotate(111deg) saturate(1735%) brightness(88%);
+} /*расчет по формуле в конце*/
+
+a.icon-calendar {
+    background-position: -8px -10px;
+}
+a.icon-forum {
+    background-position: -90px -10px;
+}
+a.icon-journey {
+    background-position: -47px -10px;
+}
+.header-welcome {
+    float: right;
+    font-size: 14px;
+}
+.header-welcome a {
+    color: #3cb878;
+}
+.header-welcome a:hover{
+    text-decoration: underline;
+}
+
+/********** ENTER BOX **********/
+
+.wrapper {
+    position: relative;
+    height: 98vh;
+}
+
+.enter-box {
+    box-sizing: border-box;
+    position: absolute;
+    /*центрирование без флекса:*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 444px;
+    border-radius: 10px;
+    padding: 30px 60px;
+    background-color: #fff;
+}
+
+.enter-box::before {
+    content: "";
+    display: inline-block;
+    border: 9px solid #3cb878;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+
+/*-- ENTER BOX HEADER --*/
+
+.enter-signup {
+    float: left;
+}
+
+.enter-login {
+    float: right;
+}
+
+.enter-active {
+    pointer-events: none;
+    cursor: default;
+    font-size: 20px;
+    color: #434343;
+}
+.enter-inactive {
+    font-size: 14px;
+    color: #3cb878;
+}
+.enter-inactive:hover{
+    text-decoration: underline;
+}
+
+/*-- ENTER BOX SOCIAL --*/
+
+.enter-social {
+    margin: 12px 0;
+}
+
+.enter-social-item {
+    width: 40%;
+    padding: 13px 15px;
+    border-radius: 3px;
+}
+.fb {
+    float: left;
+    background-color: #264b96;
+}
+.google {
+    float: right;
+    background-color: #c3412c;
+}
+.social-logo {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+.social-name {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+
+/*-- ENTER BOX FORM --*/
+
+fieldset {
+    border-top: 1px solid #bebebe50;
+    padding: 9px 0;
+}
+legend {
+    padding: 10px;
+    text-align: center;
+    color: rgba(132, 132, 132, 255);
+}
+
+/**********/
+
+.input-field {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #bebebe50;
+    border-radius: 3px;
+    margin-bottom: 9px;
+    padding: 14px;
+    font-size: 14px;
+    color: #434343;
+    font-family: Verdana, Courier, Arial, Helvetica, sans-serif;
+}
+::placeholder {
+    color: #bebebe;
+}
+
+.input-field:focus {
+    margin-bottom: 17px;
+    border: 0px solid #bebebe;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px #bebebe;
+    outline: none;
+}
+:focus::placeholder {
+    color: #43434399;
+}
+
+/**********/
+
+.checkbox-wrapper {
+    position: relative;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox-new {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bebebe50;
+}
+.agree, .terms {
+    position: absolute;
+    font-size: 14px;
+    top: 2px;
+}
+.agree {
+    left: 30px;
+    color: #434343;
+}
+.terms {
+    left: 105px;
+    color: #3cb878;
+}
+.terms:hover {
+    text-decoration: underline;
+}
+
+.checkbox:checked ~.checkmark {
+    position: absolute;
+    left:6px;
+    top: 1px;
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    border: solid #3cb878;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/**********/
+
+.submit {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #3cb878;
+    padding: 17px;
+    font-size: 16px;
+    color: #fff;
+    font-family: Verdana, Courier, Arial, Helvetica, sans-serif;
+}
+
+.submit:hover {
+    background-color: #329a65;
+}
+
+
+/********** GENERAL **********/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/********* COLOR LIBRARY *********/
+/*для себя, чтобы не искать*/
+.active-color-font {
+    color: #434343;
+}
+.inactive-form-color-font {
+    color: #bebebe;
+}
+
+.brand-color-font {
+    color: #3cb878;
+    color: rgb(60, 184,120);
+    color: hsl(149, 51%, 48%)
+}
+
+.brand-color-png {
+   /*makes color grey*/
+    filter: contrast(50%) sepia(1) hue-rotate(111deg) saturate(735%) brightness(88%);
+}
+/* to make colored icon.png:
+filter: sepia(1)  hue-rotate(h-38deg) saturate(1000+100*(100 + (24.5 - s*100)) %) brightness(100 + (l - 60.0)%);
+*/
+
+
+.brand-color-background {
+    background-color: #3cb878;
+}
+
+.brand-color-background-dark {
+    background-color: #329a65;
+}
+.fb-color-background {
+    background-color: #264b96;
+}
+.google-color-background {
+    background-color: #c3412c;
+}
+.legend-color-font {
+    color: rgba(132, 132, 132, 255)
+}
