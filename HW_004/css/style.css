@@ -4,7 +4,7 @@
 
 body {
     background-image: url(../img/background_rana-sawalha.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     font-family: Verdana, Courier, Arial, Helvetica, sans-serif;
 }
@@ -12,15 +12,15 @@ body {
 /********** HEADER **********/
 
 .header {
-    height: 2vh;
     background-color: rgba(0,0,0,.4);
     color: #fff;
     padding: 20px 100px;
+    box-sizing: border-box;
+    height: 56px;
 }
+
 .header-logo {
     float: left;
-}
-.header-logo-name {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -36,7 +36,6 @@ body {
 
 .header-icons-box {
     float: left;
-    vertical-align: center;
     margin-right: 50px;
 }
 .header-icons-box a {
@@ -76,7 +75,7 @@ a.icon-journey {
 
 .wrapper {
     position: relative;
-    height: 98vh;
+    height: 93vh;
 }
 
 .enter-box {
@@ -132,34 +131,47 @@ a.icon-journey {
 }
 
 .enter-social-item {
-    width: 40%;
+    box-sizing: border-box;
+    width: 49%;
+    height: 46px;
     padding: 13px 15px;
     border-radius: 3px;
 }
+
 .fb {
     float: left;
+    background-color: #305db8;
+}
+.fb:hover {
     background-color: #264b96;
 }
 .google {
     float: right;
+    background-color: #c8422d;
+}
+.google:hover {
     background-color: #c3412c;
 }
-.social-logo {
+
+/*.social-logo {
     display: inline-block;
     padding: 0 5px;
     vertical-align: middle;
-}
+}*/
 .social-name {
-    display: inline-block;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: capitalize;
-    padding-left: 15px;
+    padding-left: 10px;
+}
+.social-name i {
+    padding-right: 10px;
+
 }
 
 /*-- ENTER BOX FORM --*/
 
-fieldset {
+/*fieldset {
     border-top: 1px solid #bebebe50;
     padding: 9px 0;
 }
@@ -167,8 +179,30 @@ legend {
     padding: 10px;
     text-align: center;
     color: rgba(132, 132, 132, 255);
+}*/
+/*вариант с before after для оторочки линией:*/
+.legend {
+    color: rgba(132, 132, 132, 255);
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
 }
-
+.legend::before, .legend::after {
+    content: "";
+    background-color: #bebebe50;
+    width: 45%;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.legend::before {
+    right: 5%
+}
+.legend::after{
+    left: 5%;
+}
 /**********/
 
 .input-field {
@@ -187,12 +221,14 @@ legend {
 }
 
 .input-field:focus {
-    margin-bottom: 17px;
-    border: 0px solid #bebebe;
+    position: relative;
+    top: -3px;
+    border: 1px solid #fff;
     border-radius: 3px;
     box-shadow: 0 2px 6px #bebebe;
     outline: none;
 }
+
 :focus::placeholder {
     color: #43434399;
 }
@@ -205,6 +241,7 @@ legend {
 .checkbox {
     opacity: 0;
     position: absolute;
+    z-index: -1;
 }
 .checkbox-new {
     box-sizing: border-box;
@@ -213,6 +250,10 @@ legend {
     height: 20px;
     border: 1px solid #bebebe50;
 }
+.checkbox-label {
+    cursor: pointer;
+}
+
 .agree, .terms {
     position: absolute;
     font-size: 14px;
@@ -258,6 +299,7 @@ legend {
 
 .submit:hover {
     background-color: #329a65;
+    cursor: pointer;
 }
 
 
@@ -302,10 +344,17 @@ filter: sepia(1)  hue-rotate(h-38deg) saturate(1000+100*(100 + (24.5 - s*100)) %
 .brand-color-background-dark {
     background-color: #329a65;
 }
+
 .fb-color-background {
+    background-color: #305db8;
+}
+.fb-color-background-dark {
     background-color: #264b96;
 }
 .google-color-background {
+    background-color: #c8422d;
+}
+.google-color-background-dark {
     background-color: #c3412c;
 }
 .legend-color-font {
