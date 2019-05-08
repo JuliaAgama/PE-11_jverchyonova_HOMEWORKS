@@ -1,0 +1,79 @@
+/********** FONTS **********/
+
+/********** ARIMO FONT **********/
+
+@font-face {
+    font-family:"Arimo";
+    src: url(fonts/Arimo-Regular.woff2) format("woff2"),
+         url(fonts/Arimo-Regular.woff) format("woff"),
+         url(fonts/Arimo-Regular.ttf) format("opentype");
+    font-style:normal;
+    font-weight:400;
+}
+
+@font-face {
+    font-family:"arimo";
+    src: url(fonts/Arimo-Italic.woff2) format("woff2"),
+         url(fonts/Arimo-Italic.woff) format("woff"),
+         url(fonts/Arimo-Italic.ttf) format("opentype");
+    font-style:italic;
+    font-weight:400;
+}
+
+@font-face {
+    font-family:"arimo";
+    src: url(fonts/Arimo-Bold.woff2) format("woff2"),
+         url(fonts/Arimo-Bold.woff) format("woff"),
+         url(fonts/Arimo-Bold.ttf) format("opentype");
+    font-style:normal;
+    font-weight:700;
+}
+
+@font-face {
+    font-family:"arimo";
+    src: url(fonts/Arimo-BoldItalic.woff2) format("woff2"),
+         url(fonts/Arimo-BoldItalic.woff) format("woff"),
+         url(fonts/Arimo-BoldItalic.ttf) format("opentype");
+    font-style:italic;
+    font-weight:700;
+}
+}
+
+/********** COURIER FONT **********/
+
+@font-face {
+    font-family:"Courier";
+    src: url(fonts/Courier-Regular.woff2) format("woff2"),
+         url(fonts/Courier-Regular.woff) format("woff"),
+         url(fonts/Courier-Regular.ttf) format("opentype");
+    font-style:normal;
+    font-weight:400;
+}
+
+@font-face {
+    font-family:"Courier";
+    src: url(fonts/Courier-Italic.woff2) format("woff2"),
+         url(fonts/Courier-Italic.woff) format("woff"),
+         url(fonts/Courier-Italic.ttf) format("opentype");
+    font-style:italic;
+    font-weight:400;
+
+@font-face {
+    font-family:"Courier";
+    src: url(fonts/Courier-Bold.woff2) format("woff2"),
+         url(fonts/Courier-Bold.woff) format("woff"),
+         url(fonts/Courier-Bold.ttf) format("opentype");
+    font-style:normal;
+    font-weight:700;
+}
+
+@font-face {
+    font-family:"Courier";
+    src: url(fonts/Courier-BoldItalic.woff2) format("woff2"),
+         url(fonts/Courier-BoldItalic.woff) format("woff"),
+         url(fonts/Courier-BoldItalic.ttf) format("opentype");
+    font-style:italic;
+    font-weight:700;
+}
+
+

@@ -1,0 +1,130 @@
+/********** TABLE **********/
+.pricing-plan-2 {
+    border: solid #3a4965;
+    border-width: 30px 30px 22px 27px;
+    font-family: Arimo, Courier, sans-serif;
+    text-transform: uppercase;
+    /*border-spacing: 0;*/
+    text-align: center;
+    color: #484848;
+}
+
+.header-article, .header-cell, .row-article, .row-cell {
+    width: 160px;
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,0.05), 0 -2px 0 0 rgba(0,0,0,0.05);
+    vertical-align: middle;
+    font-weight: 700;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.row-article {
+    width: 200px;
+}
+
+.header-cell:nth-child(2n), .row-cell:nth-child(2n) {
+    background-color: #e3e3e3;
+}
+/******* TABLE HEADER *******/
+
+.header-article, .header-cell {
+    height: 113px;
+    font-size: 22px;
+}
+.header-article p:first-child {
+    font-size: 14px;
+}
+
+.header-cell i {
+    display: block;
+    margin: 0 auto 5px;
+    font-size: 24px;
+    color: #848484;
+
+}
+
+/******* TABLE BODY *******/
+.row-article, .row-cell {
+    height: 165px;
+    font-size: 16px;
+}
+
+/******* 1ST COLUMN (ARTICLE) *******/
+.row-article {
+    color: #fff;
+}
+
+.plan-name {
+    font-size: 24px;
+}
+.plan-price {
+    font-size: 36px;
+    position: relative;
+    left: -10px;
+}
+/*.plan-price::before {
+    content: "$";
+}*/
+
+.plan-price span {
+    font-size: 14px;
+    position: relative;
+    left: 25px;
+}
+.plan-price span::before {
+    content: ".99";
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    font-weight: 700;
+}
+
+.buy-button {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    width: 145px;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.buy-button::after {
+    content: '';
+    display: block;
+    width: 135px;
+    border: 3px solid rgba(0,0,0,0.2);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    bottom: 0;
+}
+.buy-button:hover {
+    transform: scale(1.2)
+}
+
+/******* OTHER COLUMNS (SPECIFICATION) *******/
+.row-cell {
+    color: #848484;
+}
+
+
+
+/******* GENERAL COLORS*******/
+.lime-background {
+    background-color: #89c331;
+}
+.scarlet-background {
+    background-color: #f04a56;
+}
+.aqua-background {
+    background-color: #20807c;
+}
+.dark-grey-background {
+    background-color: #484848;
+}
+
+.grey-background {
+    background-color: #e3e3e3;
+}
+.light-grey-background {
+    background-color: #f2f2f2;
+}
