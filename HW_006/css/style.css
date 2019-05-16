@@ -1,0 +1,260 @@
+/********* BASIC **********/
+
+@import
+    url("https://use.typekit.net/hte0isi.css");
+
+@import
+    url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
+body {
+    font-family: "Open Sans", courier-std, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: rgba(91, 100, 105, 1)
+}
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 50px;
+    text-align: center;
+    font-size: 27px;
+    color: #18b4cf;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+h6 {
+    padding: 0 0 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(53, 58, 61, 1);
+}
+
+/********* TOP MENU **********/
+.top-menu {
+    background-color: #1d2124;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-name {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+.logo-name p {
+    padding: 0 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.menu-list {
+    flex: 10 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.menu-item {
+    padding: 20px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.menu-item:hover {
+    color: #18b4cf;
+
+}
+
+/********* FIRST SECTION **********/
+
+.first-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 400px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.btn {
+    margin: 10px;
+    width: 150px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+}
+
+/********* POSTS SECTION **********/
+
+.posts-section {
+    padding: 0 18%;
+    background-color: #f2f2f2;
+}
+.posts-container {
+    height: 1030px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    align-content: stretch;
+}
+.post-item {
+    flex: 0 1 0;
+    margin: 15px 15px;
+}
+.pic-box {
+    width: 100%;
+}
+
+.pic-caption {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/********* CLIENTS SECTION **********/
+.clients-section {
+    height: 600px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clients-section h3::after {
+    content: "";
+    display: block;
+    margin: 55px auto;
+    width: 60px;
+    border-bottom: 3px solid rgba(22,156,180,1);
+}
+
+/********* TOP RATED SECTION **********/
+.rated-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+}
+.rated-pic {
+    flex: 1 1 auto;
+}
+
+/********* NEWS SECTION **********/
+.news-section {
+    padding: 0 18%;
+}
+
+.news-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.news-item {
+    flex: 0 1 0;
+    margin: 15px 15px;
+}
+
+.caption-box {
+    background-color: #f9f7f7;
+    padding: 20px;
+}
+
+/********* FOOTER **********/
+.footer-section {
+    background-color: #1d2124;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-logo p {
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-logo p::before {
+    content: url("../img/logo-lioit.png");
+    box-sizing: border-box;
+    height: 24px;
+    padding-right: 2px;
+}
+
+
+
+/********* ADAPTATION **********/
+
+@media (max-width: 1800px) {
+    .top-menu {
+        flex-flow: column;
+    }
+
+    .posts-container {
+        height: 1300px;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+
+    .posts-container {
+        height: 2300px;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+}
+
+
+
+
+/********* GENERAL - COLORS **********/
+
+.lime-background {
+    background-color: #89ca62;
+}
+
+.blue-background {
+    background-color: #14b9d5;
+}
+
+
+
+
