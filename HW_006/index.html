@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Architect</title>
 </head>
@@ -24,6 +24,28 @@
             <a href="#" class="menu-item">blog</a>
             <a href="#" class="menu-item">news</a>
         </div>
+
+        <form action="/search/" class="top-search-form" id="top-search-form">
+            <div class="top-form-wrap">
+               <div class="magnifier-trigger" id="magnifier-trigger" onclick="displaySwitcher()">
+                  <i class="magnifier-trigger fas fa-search"></i>
+               </div>
+
+<!--     при нажатии открывается поисковая строчка:          -->
+                <script>
+                    function displaySwitcher() {$('.search-wrap').toggleClass('display-none');}
+                </script>
+                <div class="search-wrap display-none" id="search-wrap">
+                    <input type="text" class="search-field" id="search-field" name="search-field">
+                    <label for="search-button" class="search-button-label"><i class="fas fa-search"></i></label>
+                    <button type="submit" class="search-button" id="search-button" name="search-button">
+                </div>
+
+
+            </div>
+        </form>
+
+
     </section>
 
 
@@ -75,7 +97,7 @@
 
       <!-- CLIENTS SECTION -->
    <section class="clients-section">
-       <h3>most popular clients</h3>
+       <h3>our most popular clients</h3>
        <div class="logo-container">
            <div class="logo-box"><img src="img/logo-NationalPost.png" alt="logo NOT FOUND"></div>
            <div class="logo-box"><img src="img/logo-Dryme.png" alt="logo NOT FOUND"></div>
@@ -166,16 +188,18 @@
 
 
       <!-- FOOTER -->
-   <footer class="footer-section">
+   <footer class="footer-section clearfix">
        <p> All Rights Reserved © 2014  architect.com - Interior Design &copy; Architecture Magazine</p>
        <div class="footer-logo">
-           <p>lioit</p>
+           <img src="img/logo-lioit.png" alt="logo-lioit">
+           <img src="img/logo-lioit-name.png" alt="logo-lioit-name">
        </div>
    </footer>
 
 
 
 
-   <!-- <script src="js/script.js"></script> -->
+   <script src="js/script.js"></script>
+   <script src="js/jquery-3.4.1.min.js"></script>
 </body>
 </html>
