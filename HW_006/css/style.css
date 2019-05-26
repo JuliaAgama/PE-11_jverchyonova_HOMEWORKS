@@ -152,6 +152,7 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .main-buttons {
@@ -202,17 +203,55 @@ h6 {
 
 
 /********* CLIENTS SECTION **********/
+/*parallax effect example:
+https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
+*/
 .clients-section {
     height: 600px;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.parallax {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+.parallax-group {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.clients-background {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-bg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px 18%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateZ(-300px) scale(2);
+/* Коэффицент скейла можно посчитать по формуле 1 + (translateZ * -1) / perspective) */
 }
 
-.clients-section h3::after {
+.clients-content {
+    padding: 200px 18%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    transform: translateZ(0);
+
+}
+
+.clients-content h3::after {
     content: "";
     display: block;
     margin: 55px auto 30px;
@@ -339,9 +378,6 @@ h6 {
 /********* ADAPTATION **********/
 
 @media (max-width: 1800px) {
-    .top-menu {
-        flex-flow: column;
-    }
 
     .posts-container {
         height: 1300px;
@@ -389,6 +425,14 @@ h6 {
     }
 }
 
+@media (max-width: 1500px) {
+      .top-menu {
+        flex-flow: column;
+    }
+
+}
+
+
 @media (max-width: 1000px) {
 
     .posts-container {
@@ -404,8 +448,6 @@ h6 {
         display: block;
         margin-bottom: 35px;
     }
-
-
 }
 
 
