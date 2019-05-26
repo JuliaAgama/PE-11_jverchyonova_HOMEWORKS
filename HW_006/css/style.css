@@ -74,6 +74,7 @@ h6 {
     transform: translateZ(-300px) scale(2);
 /* Коэффицент скейла можно посчитать по формуле 1 + (translateZ * -1) / perspective) */
 }
+
 .site-content {
     position: absolute;
     top: 0;
@@ -269,7 +270,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 
 /********* TOP RATED SECTION **********/
 .rated-section {
-    padding: 100px 0 20px;
+    padding: 20px 0 20px;
     background-color: #fff;
 }
 .rated-container {
@@ -297,20 +298,17 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     background-color: #f9f7f7; /* f9f7f7*/
     color: #222;
     text-align: right;
-
 }
 
 .news-item:nth-child(1) {
     grid-area: 1 / 1 / 2 / span 3;
     display: grid;
     grid-template-columns: 6fr 5fr;
-
 }
 .news-item:nth-child(2) {
     grid-area: 1 / 4 / 2 / span 1;
     text-align: center;
 }
-
 .news-item:nth-child(3) {
     grid-area: 2 / 1 / 3 / span 2;
 }
@@ -336,7 +334,6 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 .pic-box {
     overflow: hidden;
 }
-
 .pic-box img {
     min-height: 100%;
     min-width: 100%;
@@ -353,7 +350,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 
 /********* FOOTER **********/
 .footer-section {
-    padding: 30px 18vw;
+    padding: 20px 18vw;
     background-color: #1d2124;
     color: white;
     font-size: 13px;
@@ -370,11 +367,8 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     vertical-align: top;
 }
 
-
-
-
 /********* ADAPTATION **********/
-
+/*
 @media (max-width: 1800px) {
 
     .posts-container {
@@ -413,6 +407,23 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     .news-item:nth-child(8) {
         grid-area: 6 / 1 / 7 / span 3;
     }
+}
+
+@media (max-width: 1500px) {
+      .top-menu {
+        flex-flow: column;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .news-container {
+        display: block;
+    }
+    .news-item:nth-child(1n) {
+        display: block;
+        margin-bottom: 35px;
+    }
     .footer-section p {
         float: none;
         text-align: center;
@@ -423,14 +434,6 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     }
 }
 
-@media (max-width: 1500px) {
-      .top-menu {
-        flex-flow: column;
-    }
-
-}
-
-
 @media (max-width: 1000px) {
 
     .posts-container {
@@ -438,20 +441,10 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
         flex-flow: column nowrap;
         align-items: center;
     }
-
-    .news-container {
-        display: block;
-    }
-    .news-item:nth-child(1n) {
-        display: block;
-        margin-bottom: 35px;
-    }
 }
+*/
 
-
-
-
-/********* GENERAL - COLORS **********/
+/********* GENERAL - COLORS, CLEARFIX **********/
 
 .lime-background {
     background-color: #89ca62;
