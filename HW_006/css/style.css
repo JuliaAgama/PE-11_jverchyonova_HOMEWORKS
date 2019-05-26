@@ -46,6 +46,44 @@ h6 {
     color: rgba(53, 58, 61, 1);
 }
 
+.parallax {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    height: 100vh;
+}
+.parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    /*transition: transform 0.5s;*/
+}
+.parallax-group::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-bg.jpeg);
+    height: 200%;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: bottom center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    transform: translateZ(-300px) scale(2);
+/* Коэффицент скейла можно посчитать по формуле 1 + (translateZ * -1) / perspective) */
+}
+.site-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transform: translateZ(0);
+}
+
 /********* TOP MENU **********/
 .top-menu {
     background-color: #1d2124;
@@ -55,7 +93,6 @@ h6 {
     align-items: center;
     align-content: stretch;
 }
-
 
 .logo-name {
     display: flex;
@@ -67,7 +104,6 @@ h6 {
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
-
 }
 
 .menu-list {
@@ -83,7 +119,6 @@ h6 {
 }
 .menu-item:hover {
     color: #18b4cf;
-
 }
 
 /*** TOP search box ***/
@@ -112,14 +147,12 @@ h6 {
     margin-left: 10px;
     display: flex;
     align-items: center;
-
 }
 .search-field {
     border: 0;
     outline: none;
     font-size: 14px;
     text-align: center;
-
 }
 .search-button {
     opacity: 0;
@@ -201,7 +234,6 @@ h6 {
     font-weight: 700;
 }
 
-
 /********* CLIENTS SECTION **********/
 /*parallax effect example:
 https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
@@ -209,49 +241,12 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 .clients-section {
     height: 600px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.parallax {
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 300px;
-}
-.parallax-group {
-    height: 100%;
-    box-sizing: border-box;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+    /*background-color: rgba(0, 0, 155, 0.3);*/
+    padding: 200px 18% 100px;
+    color: skyblue;
 }
 
-.clients-background {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-bg.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    transform: translateZ(-300px) scale(2);
-/* Коэффицент скейла можно посчитать по формуле 1 + (translateZ * -1) / perspective) */
-}
-
-.clients-content {
-    padding: 200px 18%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-    transform: translateZ(0);
-
-}
-
-.clients-content h3::after {
+.clients-section h3::after {
     content: "";
     display: block;
     margin: 55px auto 30px;
@@ -264,7 +259,6 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     align-items: center;
     width: 75%;
     margin: 0 auto;
-
 }
 .logo-box img {
     width: 80%;
@@ -274,10 +268,13 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 }
 
 /********* TOP RATED SECTION **********/
+.rated-section {
+    padding: 100px 0 20px;
+    background-color: #fff;
+}
 .rated-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    margin-bottom: 20px;
 }
 .rated-pic img {
     width: 100%;
@@ -286,6 +283,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 /********* NEWS SECTION **********/
 .news-section {
     padding: 0 18vw 70px;
+    background-color: #fff;
 }
 
 .news-container {
