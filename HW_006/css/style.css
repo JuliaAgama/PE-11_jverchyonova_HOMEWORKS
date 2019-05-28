@@ -8,10 +8,8 @@
 
 body {
     font-family: "Open Sans", courier-std, sans-serif;
-    display: flex;
-    flex-direction: column;
     font-size: 14px;
-    color: rgba(91, 100, 105, 1)
+    color: rgba(91, 100, 105, 1);
 }
 h1 {
     padding: 20px;
@@ -49,7 +47,7 @@ h6 {
 .parallax {
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 300px;
+    perspective: 350px;
     height: 100vh;
 }
 .parallax-group {
@@ -61,7 +59,7 @@ h6 {
 .parallax-group::before {
     content: "";
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/parallax-bg.jpeg);
-    height: 200%;
+    height: 220%;
     background-size: contain;
     background-repeat: repeat;
     background-position: bottom center;
@@ -69,9 +67,9 @@ h6 {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: -15px;
     z-index: -5;
-    transform: translateZ(-300px) scale(2);
+    transform: translateZ(-350px) scale(2);
 /* Коэффицент скейла можно посчитать по формуле 1 + (translateZ * -1) / perspective) */
 }
 
@@ -208,22 +206,26 @@ h6 {
 /********* POSTS SECTION **********/
 
 .posts-section {
-    padding: 0 18vw;
     background-color: #f2f2f2;
+    padding: 0 15vh;
+}
+.posts-section h2 {
+    margin: 0 auto;
 }
 .posts-container {
     height: 900px;
     display: flex;
     flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: space-between;;
     align-items: center;
-    align-content: stretch;
 }
 .post-item {
-    flex: 0 1 0;
     margin: 15px 15px;
 }
 .pic-box {
     width: 100%;
+    object-fit: cover;
 }
 
 .pic-caption {
@@ -283,7 +285,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 
 /********* NEWS SECTION **********/
 .news-section {
-    padding: 0 18vw 70px;
+    padding: 0 15vh 70px;
     background-color: #fff;
 }
 
@@ -298,6 +300,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
     background-color: #f9f7f7; /* f9f7f7*/
     color: #222;
     text-align: right;
+    min-width:
 }
 
 .news-item:nth-child(1) {
@@ -333,6 +336,7 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 
 .pic-box {
     overflow: hidden;
+    object-fit: cover;
 }
 .pic-box img {
     min-height: 100%;
@@ -350,99 +354,24 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 
 /********* FOOTER **********/
 .footer-section {
-    padding: 20px 18vw;
+    padding: 20px 15vw;
     background-color: #1d2124;
     color: white;
     font-size: 13px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 .footer-section p {
-    float: left;
     padding: 10px 0;
 }
 .footer-logo {
-    float: right;
     padding: 10px 0;
 }
 .footer-logo img {
     vertical-align: top;
 }
 
-/********* ADAPTATION **********/
-/*
-@media (max-width: 1800px) {
-
-    .posts-container {
-        height: 1300px;
-        align-items: center;
-    }
-
-    .news-container {
-        grid-auto-columns: repeat(3, 1fr);
-    }
-    .news-item:nth-child(1) {
-        grid-area: 1 / 1 / 2 / span 3;
-    }
-    .news-item:nth-child(2) {
-        grid-area: 2 / 1 / 3 / span 1;
-    }
-    .news-item:nth-child(3) {
-        grid-area: 2 / 2 / 3 / span 2;
-    }
-    .news-item:nth-child(4) {
-        grid-area: 3 / 1 / 4 / span 3;
-        display: grid;
-        grid-template-columns: 6fr 5fr;
-    }
-    .news-item:nth-child(5) {
-        grid-area: 4 / 1 / 5 / span 3;
-        display: grid;
-        grid-template-columns: 6fr 5fr;
-    }
-    .news-item:nth-child(6) {
-        grid-area: 5 / 1 / 6 / span 2;
-    }
-    .news-item:nth-child(7) {
-        grid-area: 5 / 3 / 6 / span 1;
-    }
-    .news-item:nth-child(8) {
-        grid-area: 6 / 1 / 7 / span 3;
-    }
-}
-
-@media (max-width: 1500px) {
-      .top-menu {
-        flex-flow: column;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .news-container {
-        display: block;
-    }
-    .news-item:nth-child(1n) {
-        display: block;
-        margin-bottom: 35px;
-    }
-    .footer-section p {
-        float: none;
-        text-align: center;
-    }
-    .footer-logo {
-        float: none;
-        text-align: center;
-    }
-}
-
-@media (max-width: 1000px) {
-
-    .posts-container {
-        height: 2300px;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-}
-*/
 
 /********* GENERAL - COLORS, CLEARFIX **********/
 
@@ -453,11 +382,4 @@ https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/
 .blue-background {
     background-color: #14b9d5;
 }
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 
