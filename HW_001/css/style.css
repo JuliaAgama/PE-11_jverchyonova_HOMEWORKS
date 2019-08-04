@@ -1,0 +1,97 @@
+/*НИКИТА УТОЧНИЛ ЗАДАНИЕ - БЕЗ УЧЕТА ШРИФТОВ*/
+/*ЧЕРНОВЫЕ ПРОБЫ - ДЛЯ СЕБЯ*/
+/* @font-face {
+   font-family: "Roboto Black";
+    src: url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+}
+
+@font-face {
+    font-family: Courier;
+    src: url(https://use.typekit.net/hte0isi.css);
+*/
+
+/*****************************/
+
+    /* GENERAL RULES */
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    letter-spacing: .05em;
+    font-weight: 800;
+}
+.null-font-size {
+    font-size: 0;
+}
+/*****************************/
+/* NAVIGATION MENU */
+
+nav {
+    padding: 35px;
+    text-align: center;
+}
+
+nav .item-link {
+    padding: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #16a085;
+
+}
+
+/*****************************/
+    /* IMAGE BOX */
+.top-image {
+    width: 100%;
+    margin: 0;
+}
+
+/*****************************/
+    /* TEXT PAGE */
+
+.text-page {
+    background: #f5f6f7;
+    margin: 0;
+    padding: 50px 110px 95px;
+    text-align: center;
+
+}
+
+.text-header {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.text-box {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+.button-start {
+    display: inline-block;
+    padding: 20px 45px;
+    border-radius: 5px;
+    background: #16a085;
+}
+
+.button-start {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: white;
+}
+
+/*****************************/
+    /* FOOTER */
+
+.footer {
+    text-align: right;
+    margin: 45px 100px
+
+}
+
+.footer cite {
+    color: #16a085;
+}

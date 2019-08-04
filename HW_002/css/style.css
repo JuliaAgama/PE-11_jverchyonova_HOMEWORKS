@@ -1,0 +1,140 @@
+/********* GENERAL RULES *********/
+.wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1480px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 60px 100px 30px
+}
+
+/************ TOP  ************/
+.top-logo {
+    color: black;
+    font-size: 80px;
+}
+
+.blue-color {
+    color: #4bcaff;
+}
+
+.top-menu {
+    background-color: #35444f;
+    margin: 45px 0 50px;
+    padding: 0 20px 0;
+    text-align: center;
+}
+
+.top-menu-item {
+    display: inline-block;
+    padding: 25px 40px;
+    font-size: 24px;
+    color: white;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.top-menu-item:hover {
+    background-color: #222f3a;
+    border-left-color: #818181;
+    border-right-color: #818181;
+}
+
+/********* MAIN SECTION *********/
+.main-section {
+}
+
+    /***** LEFT SUBMENU ******/
+.submenu-left {
+    display: inline-block;
+    width: 345px;
+    border: 3px solid #35444f;
+}
+
+.submenu-left-item {
+    display: block;
+    padding: 25px 45px;
+    font-size: 30px;
+    color: #495863;
+    line-height: 1.1;
+}
+
+.submenu-left-item:hover {
+    background-color: #dbdbdb;
+    padding-left: 70px;
+    font-weight: 700;
+}
+
+    /***** MAIN PAGE ******/
+.main-page {
+    display: inline-block;
+    width: 885px;
+    vertical-align: top;
+    margin-left: 38px;
+}
+
+.picture-box-wrapper {
+    border: 3px solid #35444f;
+    overflow: hidden;
+}
+
+.picture-box {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+
+}
+.picture-box:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
+
+.picture {
+    display: block;
+    margin: 75px auto;
+
+}
+
+.main-text {
+    padding: 35px 20px;
+    font-size: 18px;
+}
+
+.main-text p {
+    display: inline-block;
+    margin: 15px 20px 15px 10px;
+}
+
+/*********** FOOTER ************/
+.footer {
+    background-color: #b4b7ba;
+    padding: 20px;
+}
+
+.footer-menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    padding: 0 10px;
+}
+
+.footer-menu-item {
+    padding-left: 10px;
+    padding-right: 5px;
+    color: #0c1927;
+    font-size: 28px;
+}
+.footer-menu-item:hover {
+    color: #3181a6;
+    border-bottom: 2px solid #3181a6;
+}
+
+.footer-copyright {
+    display: inline-block;
+    vertical-align: middle;
+    color: #0c1927;
+    font-size: 24px;
+    text-align: right;
+    margin-left: 150px;
+}
+/************/
