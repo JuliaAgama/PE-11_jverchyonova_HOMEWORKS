@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JS Homework #10. Show password </title>
+
+</head>
+<body>
+   <h1>JS Homework #10. DOM. Working with events. Attaching events to DOM nodes. Keyboard and scroll events</h1>
+   <h2>JS Homework #10. Show password </h2>
+
+
+    <form class="password-form" action="#" type="POST" id="password-form">
+        <label class="input-wrapper" id="pass-wrapper">
+             Ввести пароль
+             <input type="password" id="pass"/>
+             <i class="fas fa-eye icon-password"></i>
+             <i class="fas fa-eye-slash icon-password hidden"></i>
+        </label>
+        <label class="input-wrapper" id ="confirm-wrapper">
+             Подтвердить пароль
+             <input type="password" id="confirm"/>
+             <i class="fas fa-eye icon-password hidden"></i>
+             <i class="fas fa-eye-slash icon-password"></i>
+        </label>
+        <button type="submit" class="btn">Подтвердить</button>
+    </form>
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

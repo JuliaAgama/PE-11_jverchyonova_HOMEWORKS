@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+/* CITIES */
+
+.cities {
+    width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    min-height: 300px;
+    background-color: rgba(161,255,145,0.5);
+}
+
+.cities-header {
+    font-size: 30px;
+    color: #FE5500;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}

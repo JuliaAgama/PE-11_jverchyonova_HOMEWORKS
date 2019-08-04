@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+/*******JS Homework #09 - BASIC. Tabs **********/
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.centered-content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs-title {
+    padding: 20px;
+    background-color: #23201D;
+    color: #937341;
+    cursor: pointer;
+}
+
+.tabs-title.active {
+    background-color:#937341 ;
+    color: #23201D;
+}
+
+.hidden {
+    display: none;
+}

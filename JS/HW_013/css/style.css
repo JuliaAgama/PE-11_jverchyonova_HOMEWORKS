@@ -1,0 +1,243 @@
+/**/
+
+@import url("https://use.typekit.net/hte0isi.css");
+
+
+
+
+/*********** STYLE BUTTON ***************/
+
+.style-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.night-btn {
+    border: 1px solid #fff;
+    background-color: #f26522;
+    box-shadow: 2px 2px 2px #f26522;
+    color: #fff;
+}
+
+.day-btn {
+    border: 1px solid #FCEACD;
+    background-color: rgb(32, 148, 0);
+    box-shadow: 2px 2px 3px rgba(32, 148, 0, 0.5);
+    color: #fff;
+}
+
+
+/*********** BASIC  ***************/
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background.png);
+
+}
+
+.day-bgc {
+    background-image: url(../img/background-day.jpg);
+}
+
+
+.wrapper {
+    width: 1066px;
+    margin: 49px auto 20px;
+    color: white;
+    font-family: Verdana, Courier, Arial, Helvetica, sans-serif;
+}
+
+/*********** TOP SECTION ***************/
+
+.top {
+    margin-bottom: 47px;
+}
+
+.top-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(rgba(32, 148, 0, 0.9), transparent);
+}
+.top-left {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo-picture {
+    float: left;
+    width: 46px;
+    height: 44px;
+    margin-right: 15px;
+}
+.orange-logo {
+    display: none;
+}
+
+.logo-name {
+    float: left;
+}
+[class*="top-left-line"] {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.top-left-line-1 {
+    font-size: 29px;
+}
+.top-left-line-2 {
+    font-size: 18px;
+}
+
+.top-left:hover {
+    color: #f26522;
+}
+.top-left:hover .white-logo {
+    /*display: none;*/
+    content: url("../img/logo-orange.png");
+}
+/*.top-left:hover .orange-logo {
+    display: block;
+}*/
+
+.top-right {
+    float: right;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 8px;
+    line-height: 1.3;
+}
+
+
+
+
+/*********** MAIN SECTION ***************/
+
+.main-block {
+    float: left;
+    width: 312px;
+    margin-right: 65px;
+    margin-bottom: 36px; /*результирующий отступ 58*/
+
+}
+.main-block:nth-child(3n) {
+    margin-right: 0;
+}
+
+.picture-box {
+    width: 312px;
+    height: 205px;
+    overflow: hidden;
+    padding: 2.5px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, transparent, rgba(255, 255, 255, 1));
+/*border-image: linear-gradient - Срабатывает только на уголки*/
+    position: relative;
+}
+
+.pic {
+    width: 100%;
+}
+
+.caption {
+    font-size: 18px;
+    text-align: center;
+    padding: 22px;
+    text-transform: capitalize;
+}
+
+.details-box {
+    width: 312px;
+    height: 63px;
+    background-color: #f26522;
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+    padding: 16px 0 16px 21px;
+    box-sizing: border-box;
+    /*visibility: hidden;*/
+    transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -webkit-transition: all .7s ease-in-out;
+}
+.details-left-box {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    line-height: 1.1;
+    width: 43%;
+}
+.details-left-box p.price:nth-child(1) {
+    font-size: 10px;
+}
+.details-left-box p.price:nth-child(2) {
+    font-size: 20px;
+}
+.details-right-box {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    width: 50%;
+    text-align: right;
+}
+.details-right-text::after {
+    content: url("../img/arrow.png");
+    width: 7px;
+    height: 10px;
+    padding-left: 15px;
+}
+
+/*
+.main-block:hover .caption {
+    color: #f26522;
+}
+*/
+.main-block:hover .details-box {
+    /*visibility: visible;*/
+    transform: translate(0,-65px);
+    -o-transform: translate(0,-65px);
+    -moz-transform: translate(0,-65px);
+    -webkit-transform: translate(0,-65px);
+}
+
+/*********** FOOTER SECTION ***************/
+
+.footer-text {
+    font-size: 12px;
+    text-align: center;
+    padding: 3px 0 20px;
+}
+
+/********** GENERAL *************/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.day-font {
+    color: darkgreen;
+}
+.day-back {
+    background-color: darkgreen;
+}
+.day-border {
+    background-image: linear-gradient(to top, transparent, darkgreen);
+}

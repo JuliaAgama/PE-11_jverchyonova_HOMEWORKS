@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+/*******JS Homework # 12  **********/
+
+
+.image-to-show {
+    width: 300px;
+    height: 300px;
+}
+
+.first-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+/*******  ---  **********/
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.stop-btn, .resume-btn {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+
+.second-wrapper {
+    height: 300px;
+    position: relative;
+}
+
+.second-wrapper .image-to-show {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid darkgreen;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}

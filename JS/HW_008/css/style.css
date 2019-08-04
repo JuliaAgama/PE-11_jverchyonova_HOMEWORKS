@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+h1 {
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h2 {
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+/******* JS Homework #08 - BASIC. Validate Price  *******/
+
+
+.input-field, .input-legend {
+    margin-left: 300px;
+    font-size: 30px;
+}
+.input-field {
+    display: block;
+}
+.input-legend {
+    vertical-align: middle;
+}
+.input-legend-btn {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #666;
+    vertical-align: middle;
+}
+
+.error-message {
+    font-size: 30px;
+    margin-left: 300px;
+}
